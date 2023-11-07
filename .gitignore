@@ -1,3 +1,6 @@
+# don't need this
+/nvim/plugin/
+
 # Compiled Lua sources
 luac.out
 
