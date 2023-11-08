@@ -11,7 +11,16 @@ return require('packer').startup(function(use)
 		run = function()
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
-		end,}
+        end,}
+
+    use({
+        "folke/trouble.nvim",
+        config = function ()
+            require("trouble").setup {
+                icons = false,
+            }
+        end
+    })
 
     use("ellisonleao/gruvbox.nvim")
 
