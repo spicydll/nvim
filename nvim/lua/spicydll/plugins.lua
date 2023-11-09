@@ -11,18 +11,11 @@ return require('packer').startup(function(use)
 		run = function()
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
-        end,}
-
-    use({
-        "folke/trouble.nvim",
-        config = function ()
-            require("trouble").setup {
-                icons = false,
-            }
-        end
-    })
+		end,}
 
     use("ellisonleao/gruvbox.nvim")
+
+    use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
 
 	use("nvim-treesitter/playground")
 	use("nvim-lua/plenary.nvim")
