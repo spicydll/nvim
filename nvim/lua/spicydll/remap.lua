@@ -6,3 +6,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "Q", "<nop>")
+
+vim.keymap.set({"n", "v"}, "<leader>y", '"+y')
+vim.keymap.set({"n", "v"}, "<leader>p", '"+p')
+vim.keymap.set({"n", "v"}, "<leader>P", '"+P')
