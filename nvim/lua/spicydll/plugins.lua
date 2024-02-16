@@ -51,6 +51,7 @@ return require('packer').startup(function(use)
 		}
 	}
 
-    use('onyx-lang/onyx.vim');
+    use('onyx-lang/onyx.vim')
+    use('jmederosalvarado/roslyn.nvim')
 
 end)
